@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Password Generator</title>
+	<link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800,900&display=swap&subset=cyrillic" rel="stylesheet">
+
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h1 class="text-center">Бесплатный генератор паролей</h1>
+		<hr>
+		<div class="form-block">
+			<form>
+  				<div class="form-group">
+    				<label for="param-1"><h3>Установите количество символов в пароле - <span id="password-length"> 8</span></h3> </label>
+    				<input type="range" class="form-control" id="range" value="8" max="50">
+  				</div>
+  				<div class="checkbox">
+  					<h3>Пароль должен содержать:</h3>
+    				<label> 
+      					<input type="checkbox" id="numbers" checked> Цифры
+    				</label>
+  				</div>
+  				<div class="checkbox">
+    				<label>
+      					<input type="checkbox" id="lower-letters" checked> Строчные буквы
+    				</label>
+  				</div>
+  				<div class="checkbox">
+    				<label>
+      					<input type="checkbox" id="upper-letters"> Заглавные буквы
+    				</label>
+  				</div>
+  				<div class="checkbox">
+    				<label>
+      					<input type="checkbox" id="symbols"> Специальные символы
+    				</label>
+  				</div>
+  				
+  				<button type="button" id="generator" class="btn">Сгенерировать</button>
+			</form>
+		</div>
+
+		<div class="result-block">
+			<h3>5 вариантов для Вашего пароля:</h3>
+			<div id="result-password" >
+				<ul>
+					<li></li>
+				</ul>
+			</div>
+		</div>
+	
+		<p class="copy"><a href="https://d-blog.space" target="_blank">&copy; 2020 Andriy Yalunin</a><p>
+	</div>
+
+
+	
+	<script src="script.js"></script>
+</body>
+</html>
