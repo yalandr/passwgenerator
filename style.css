@@ -67,6 +67,10 @@ h1 {
 	margin-top: 10px;
 }
 
+.border-bottom {
+	border-bottom: 1px solid inherit;
+}
+
 
 
 /*Media Queries*/
