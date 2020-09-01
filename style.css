@@ -1,5 +1,6 @@
 * {
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
@@ -8,6 +9,7 @@ body {
 	font-family: 'Nunito', sans-serif;
 	font-weight: 300;
 	color: #ddd;
+	background: -o-linear-gradient(45deg, #000, purple);
 	background: linear-gradient(45deg, #000, purple);
 	height: 100vh;
 	padding-top: 2rem;
@@ -47,13 +49,16 @@ h1 {
 	color: #ddd;
 	font-size: 1.2em;
 	border: none;
+	-webkit-transition: .3s;
+	-o-transition: .3s;
 	transition: .3s;
 	cursor: pointer;
 	margin-top: 20px;
 }
 
 .btn:hover {
-	box-shadow: 0 0 8px #e84393;
+	-webkit-box-shadow: 0 0 8px #e84393;
+	        box-shadow: 0 0 8px #e84393;
 }
 
 #result-password {
@@ -65,10 +70,6 @@ h1 {
 .copy {
 	font-size: 0.8em;
 	margin-top: 10px;
-}
-
-.border-bottom {
-	border-bottom: 1px solid inherit;
 }
 
 
