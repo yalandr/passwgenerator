@@ -39,7 +39,6 @@ function generatePass() {
 		for (var i = 0; i < passLength; i++) {
 			pass += result[randomInteger(0, result.length - 1)];
 		}
-		console.log(pass);
 		document.getElementById('result-password').innerHTML += '<li>' + pass + '</li>';
 	}
 }
