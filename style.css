@@ -92,4 +92,7 @@ h1 {
 		height: auto;
 	    padding-bottom: 40px;
     }
+	#result-password li {
+		font-size: 1rem;
+	}
 }
